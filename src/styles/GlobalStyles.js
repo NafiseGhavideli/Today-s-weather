@@ -27,15 +27,13 @@ const GlobalStyles = createGlobalStyle`
   --liner-gradient-5: 160deg, #0093E9 0%, #80D0C7 100%;
   --liner-gradient-6: 160deg, #0093E9 0%, #80D0C7 100%
   
-  --image-grayscale: 0;
-  --image-opacity: 100%;
+
   }
 
   --border-radius-tiny: 2px;
   --border-radius-sm: 8px;
   --border-radius-md: 16px;
   --border-radius-lg: 32px;
-
 
 } 
 
@@ -45,24 +43,30 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 html {
   font-size: 62.5%;
-}
-
-body {
-  font-family: "rubik", sans-serif;
-  position: relative;
 
   background: linear-gradient(var(--liner-gradient-${
     Math.floor(Math.random() * 5) + 1
   }));
 
-  min-height: 100vh;
-  font-size: 1.6rem;
-  
+   height:100%;
+  background-repeat:no-repeat;
+  @media only screen and (max-width: 900px) {
+      font-size: 50%;
+    }  
+  @media only screen and (max-width: 570px) {
+      font-size: 40%;
+    }  
+
+}
+
+body {
+  font-family: "rubik", sans-serif;
+
+   
 }
 
 input,
@@ -96,3 +100,5 @@ img {
 `;
 
 export default GlobalStyles;
+
+/* BreakPoints: 900px 730px 570px 470px */

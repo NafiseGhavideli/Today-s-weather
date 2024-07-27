@@ -9,6 +9,9 @@ const TodayBox = styled.div`
   gap: 4rem;
   align-items: center;
   margin-bottom: 4rem;
+  @media only screen and (max-width: 470px) {
+    flex-direction: column;
+  }
 `;
 function Today() {
   return (

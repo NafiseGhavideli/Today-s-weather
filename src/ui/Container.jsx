@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  max-width: 100%;
   background-color: var(--color-grey-100);
   box-shadow: var(--shadow-md);
 
-  padding: 8rem;
+  padding: 3rem;
   margin: 0 auto;
   border-radius: var(--border-radius-lg);
 

@@ -11,23 +11,26 @@ const Location = styled.h1`
   text-align: center;
   color: var(--color-grey-700);
   margin-bottom: 0.5rem;
+  font-size: 2.8rem;
+  @media only screen and (max-width: 730px) {
+    font-size: 2.2rem;
+  }
 `;
 
 const Temperature = styled.p`
   color: var(--color-grey-700);
-  font-size: 10rem;
+  font-size: 8rem;
   font-weight: 500;
 `;
 const Info = styled.p`
   color: var(--color-grey-500);
-  font-size: 1.2rem;
   align-items: center;
   margin-bottom: 0.5rem;
 `;
 
 const Icon = styled.img`
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.2rem;
+  height: 2.2rem;
 `;
 
 function MainInformation() {
@@ -51,6 +54,7 @@ function MainInformation() {
               ? "https://img.icons8.com/?size=100&id=648&format=png&color=000000"
               : "https://img.icons8.com/?size=100&id=45474&format=png&color=000000"
           }
+          alt="day or night"
         />
       </Location>
       <Info>{timezone}</Info>

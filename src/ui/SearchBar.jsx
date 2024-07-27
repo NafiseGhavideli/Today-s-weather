@@ -21,6 +21,7 @@ const City = styled.li`
   background-color: var(--color-grey-100);
   border-bottom: 1px solid var(--color-grey-300);
   padding: 1rem 0;
+  font-size: 1.2rem;
   text-align: center;
 `;
 function SearchBar() {
@@ -39,7 +40,7 @@ function SearchBar() {
           <SearchList>
             {cities.map(
               (city, i) =>
-                i < 5 && (
+                i < 4 && (
                   <City
                     onClick={() => {
                       setChosenLoc({

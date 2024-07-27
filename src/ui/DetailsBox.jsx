@@ -6,11 +6,20 @@ const Box = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
+  @media only screen and (max-width: 730px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  @media only screen and (max-width: 470px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
 `;
 const Detail = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.4rem;
 
   border: 1px solid var(--color-grey-200);
   padding: 1rem 2rem;
@@ -20,12 +29,15 @@ const Detail = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
+  @media only screen and (max-width: 730px) {
+    gap: 1rem;
+    padding: 0.8rem 1.4rem;
+  }
 `;
 const Lable = styled.p`
   color: var(--color-grey-500);
   font-size: 1.2rem;
   align-items: center;
-  margin-bottom: 0.5rem;
 `;
 const Image = styled.img`
   width: 2.4rem;
